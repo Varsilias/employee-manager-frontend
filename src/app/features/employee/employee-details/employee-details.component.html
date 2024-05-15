@@ -1,0 +1,17 @@
+<div class="flex justify-center p-8">
+    <div class="w-1/2">
+        <h3 class="text-center font-bold text-xl text-slate-500">Employee Details</h3>
+        @if (employee) {
+        <div class="w-full flex flex-col items-center mt-8">
+            <ul class="space-y-4">
+                <li><span class="font-bold">ID:</span> {{employee.id}}</li>
+                <li><span class="font-bold">Firstname:</span> {{employee.firstName}}</li>
+                <li><span class="font-bold">Lastname:</span> {{employee.lastName}}</li>
+                <li><span class="font-bold">Email:</span> {{employee.email}}</li>
+            </ul>
+        </div>
+        } @else {
+        <h2>Loading...</h2>
+        }
+    </div>
+</div>
